@@ -1,0 +1,103 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.musicavis.plantsense"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.BLUETOOTH" />
+15-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:3:4-67
+15-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:3:21-64
+16    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+16-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:4:4-73
+16-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:4:21-70
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:5:4-79
+17-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:5:21-77
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->[:flutter_blue] /home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+18-->[:flutter_blue] /home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/build/flutter_blue/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+19
+20    <application
+20-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:6:4-43:19
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] /home/macpoule/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/launcher_icon"
+23-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:8:9-45
+24        android:label="Plant Sense" >
+24-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:7:9-36
+25        <activity
+25-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:9:9-37:20
+26            android:name="com.example.plantsense.MainActivity"
+26-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:10:13-41
+27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+27-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:13:13-163
+28            android:hardwareAccelerated="true"
+28-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:14:13-47
+29            android:launchMode="singleTop"
+29-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:11:13-43
+30            android:theme="@style/LaunchTheme"
+30-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:12:13-47
+31            android:windowSoftInputMode="adjustResize" >
+31-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:15:13-55
+32
+33            <!--
+34                 Specifies an Android theme to apply to this Activity as soon as
+35                 the Android process has started. This theme is visible to the user
+36                 while the Flutter UI initializes. After that, this theme continues
+37                 to determine the Window background behind the Flutter UI.
+38            -->
+39            <meta-data
+39-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:20:13-23:17
+40                android:name="io.flutter.embedding.android.NormalTheme"
+40-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:21:15-70
+41                android:resource="@style/NormalTheme" />
+41-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:22:15-52
+42            <!--
+43                 Displays an Android View that continues showing the launch screen
+44                 Drawable until Flutter paints its first frame, then this splash
+45                 screen fades out. A splash screen is useful to avoid any visual
+46                 gap between the end of Android's launch screen and the painting of
+47                 Flutter's first frame.
+48            -->
+49            <meta-data
+49-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:29:13-32:17
+50                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+50-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:30:15-79
+51                android:resource="@drawable/launch_background" />
+51-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:31:15-61
+52
+53            <intent-filter>
+53-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:33:13-36:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:34:17-68
+54-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:34:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:35:17-76
+56-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:35:27-74
+57            </intent-filter>
+58        </activity>
+59        <!--
+60             Don't delete the meta-data below.
+61             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+62        -->
+63        <meta-data
+63-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:40:9-42:33
+64            android:name="flutterEmbedding"
+64-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:41:13-44
+65            android:value="2" />
+65-->/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/android/app/src/main/AndroidManifest.xml:42:13-30
+66    </application>
+67
+68</manifest>
