@@ -1,21 +1,21 @@
 venv/
 
 # Miscellaneous
-app/*.class
-app/*.log
-app/*.pyc
-app/*.swp
-app/.DS_Store
-app/.atom/
-app/.buildlog/
-app/.history
-app/.svn/
+ui/*.class
+ui/*.log
+ui/*.pyc
+ui/*.swp
+ui/.DS_Store
+ui/.atom/
+ui/.buildlog/
+ui/.history
+ui/.svn/
 
 # IntelliJ related
-app/*.iml
-app/*.ipr
-app/*.iws
-app/.idea/
+ui/*.iml
+ui/*.ipr
+ui/*.iws
+ui/.idea/
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
@@ -25,27 +25,27 @@ app/.idea/
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
-app/.dart_tool/
-app/.flutter-plugins
-app/.flutter-plugins-dependencies
-app/.packages
-app/.pub-cache/
-app/.pub/
-app/build/
+ui/.dart_tool/
+ui/.flutter-plugins
+ui/.flutter-plugins-dependencies
+ui/.packages
+ui/.pub-cache/
+ui/.pub/
+ui/build/
 
 # Web related
-app/lib/generated_plugin_registrant.dart
+ui/lib/generated_plugin_registrant.dart
 
 # Symbolication related
-app/app.*.symbols
+ui/app.*.symbols
 
 # Obfuscation related
-app/app.*.map.json
+ui/app.*.map.json
 
 # Android Studio will place build artifacts here
-app/android/app/debug
-app/android/app/profile
-app/android/app/release
+ui/android/app/debug
+ui/android/app/profile
+ui/android/app/release
 
 
 # Prerequisites
@@ -79,4 +79,4 @@ app/android/app/release
 # Executables
 *.exe
 *.out
-*.app
+*.ui
