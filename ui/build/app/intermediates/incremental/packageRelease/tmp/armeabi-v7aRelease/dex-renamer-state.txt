@@ -1,4 +1,0 @@
-#Sun Oct 10 13:04:05 CEST 2021
-base.0=/home/macpoule/Documents/PlatformIO/Projects/plant-sense/ui/build/app/intermediates/dex/release/mergeDexRelease/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
