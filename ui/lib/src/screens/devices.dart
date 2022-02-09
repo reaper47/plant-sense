@@ -11,16 +11,16 @@ class DevicesScreen extends ConsumerWidget {
   const DevicesScreen({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, ScopedReader watch) {
-    final devicesAsyncValue = watch(devicesProvider);
-    final isScanningAsyncValue = watch(isBluetoothScanningProvider);
-    final isCelsius = watch(isCelsiusProvider);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final devicesAsyncValue = ref.watch(devicesProvider);
+    final isScanningAsyncValue = ref.watch(isBluetoothScanningProvider);
+    final isCelsius = ref.watch(isCelsiusProvider);
 
     return devicesAsyncValue.when(
       loading: () => const CircularProgressIndicator(),
       error: (err, stack) => buildDevicesError(err),
       data: (scanResults) => buildDevicesData(
-        context,
+        ref, context,
         scanResults,
         isScanningAsyncValue,
         isCelsius,
@@ -36,7 +36,7 @@ class DevicesScreen extends ConsumerWidget {
   }
 
   Widget buildDevicesData(
-    BuildContext context,
+    WidgetRef ref, BuildContext context,
     List<ScanResult> scanResults,
     AsyncValue<bool> isScanningAsyncValue,
     bool isCelsius,
@@ -44,18 +44,18 @@ class DevicesScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Plants'),
-        actions: [buildTemperatureToggle(context, isCelsius)],
+        actions: [buildTemperatureToggle(ref, context, isCelsius)],
       ),
       body: buildDevicesList(scanResults),
       floatingActionButton: FloatingActionButton(
         child: setFloatingActionButton(isScanningAsyncValue),
-        onPressed: () => startScan(context, isScanningAsyncValue),
+        onPressed: () => startScan(ref, context, isScanningAsyncValue),
         tooltip: 'Scan nearby Bluetooth devices',
       ),
     );
   }
 
-  Widget buildTemperatureToggle(BuildContext context, bool isCelsius) {
+  Widget buildTemperatureToggle(WidgetRef ref, BuildContext context, bool isCelsius) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: Row(
@@ -64,7 +64,7 @@ class DevicesScreen extends ConsumerWidget {
           Switch(
             value: isCelsius,
             onChanged: (value) =>
-                context.read(isCelsiusProvider.notifier).isCelsius = value,
+                ref.read(isCelsiusProvider.notifier).isCelsius = value,
             activeTrackColor: Colors.pink,
             activeColor: Colors.white,
           ),
@@ -104,13 +104,13 @@ class DevicesScreen extends ConsumerWidget {
   }
 
   void startScan(
-    BuildContext context,
+    WidgetRef ref, BuildContext context,
     AsyncValue<bool> isScanningAsyncValue,
   ) async {
     isScanningAsyncValue.when(
       data: (isScanning) {
         if (!isScanning) {
-          context.read(connectedDevicesProvider.notifier).disconnectDevices();
+          ref.read(connectedDevicesProvider.notifier).disconnectDevices();
           FlutterBlue.instance.startScan(
             timeout: const Duration(seconds: 4),
           );

@@ -13,8 +13,8 @@ class App extends ConsumerWidget {
   const App({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, ScopedReader watch) {
-    final stateAsyncValue = watch(bluetoothStateProvider);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final stateAsyncValue = ref.watch(bluetoothStateProvider);
 
     return stateAsyncValue.when(
       loading: () => const CircularProgressIndicator(),

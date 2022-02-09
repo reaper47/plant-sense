@@ -11,8 +11,8 @@ class CharacteristicTile extends ConsumerWidget {
       : super(key: key);
 
   @override
-  Widget build(BuildContext context, ScopedReader watch) {
-    final isCelsius = watch(isCelsiusProvider);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final isCelsius = ref.watch(isCelsiusProvider);
     Measurement temperature =
         isCelsius ? measurements.temperatureC : measurements.temperatureF;
 

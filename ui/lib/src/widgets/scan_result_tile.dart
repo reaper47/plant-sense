@@ -14,8 +14,8 @@ class ScanResultTile extends ConsumerWidget {
   const ScanResultTile(this.result, {Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, ScopedReader watch) {
-    List<DeviceInfo> deviceInfos = watch(connectedDevicesProvider);
+  Widget build(BuildContext context, WidgetRef ref) {
+    List<DeviceInfo> deviceInfos = ref.watch(connectedDevicesProvider);
 
     final deviceInfo = deviceInfos.firstWhere(
       (deviceInfo) => deviceInfo.device.id.id == result.device.id.id,
@@ -43,7 +43,7 @@ class ScanResultTile extends ConsumerWidget {
         ),
         trailing: const Icon(Icons.keyboard_arrow_down),
         onExpansionChanged: (isOpen) =>
-            onExpansionChanged(context, isOpen, device),
+            onExpansionChanged(ref, context, isOpen, device),
         children: [CharacteristicTile(measurements: deviceInfo.measurements)]);
   }
 
@@ -76,13 +76,13 @@ class ScanResultTile extends ConsumerWidget {
   }
 
   void onExpansionChanged(
-    BuildContext context,
+    WidgetRef ref, BuildContext context,
     bool isOpen,
     BluetoothDevice device,
   ) {
-    final notifier = context.read(connectedDevicesProvider.notifier);
+    final notifier = ref.read(connectedDevicesProvider.notifier);
     if (isOpen) {
-      notifier.connectDevice(device);
+      notifier.connectDevice(ref, device);
     } else {
       notifier.disconnectDevice(device);
     }

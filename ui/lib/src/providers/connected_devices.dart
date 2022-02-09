@@ -11,7 +11,7 @@ final connectedDevicesProvider =
 class ConnectedDevicesNotifier extends StateNotifier<List<DeviceInfo>> {
   ConnectedDevicesNotifier() : super([]);
 
-  void connectDevice(BluetoothDevice device) async {
+  void connectDevice(WidgetRef ref, BluetoothDevice device) async {
     await device.connect();
 
     final services = await device.discoverServices();
