@@ -1,4 +1,4 @@
-package com.example.plantsense
+package com.macpoule.plantsense
 
 import io.flutter.embedding.android.FlutterActivity
 
