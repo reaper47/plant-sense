@@ -26,7 +26,6 @@ class ScanResultTile extends ConsumerWidget {
     );
 
     final device = deviceInfo.device;
-    final rssi = result.rssi;
 
     return ExpansionTile(
         title: Text(
@@ -76,7 +75,8 @@ class ScanResultTile extends ConsumerWidget {
   }
 
   void onExpansionChanged(
-    WidgetRef ref, BuildContext context,
+    WidgetRef ref,
+    BuildContext context,
     bool isOpen,
     BluetoothDevice device,
   ) {

@@ -28,7 +28,7 @@ void measure();
 
 void setup()
 {
-  esp_sleep_enable_timer_wakeup(US_ONE_SECOND * 60);
+  esp_sleep_enable_timer_wakeup(US_ONE_SECOND * 300);
 
   pinMode(LED_BUILTIN, OUTPUT);
   digitalWrite(LED_BUILTIN, 0);

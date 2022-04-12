@@ -8,11 +8,11 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/include",
-                "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/src",
-                "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/.pio/libdeps/wemosbat/DHT sensor library",
-                "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/.pio/libdeps/wemosbat/Adafruit Unified Sensor",
-                "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/.pio/libdeps/wemosbat/ESP32 BLE Arduino/src",
+                "/home/macpoule/Documents/Code/plant-sense/include",
+                "/home/macpoule/Documents/Code/plant-sense/src",
+                "/home/macpoule/Documents/Code/plant-sense/.pio/libdeps/wemosbat/DHT sensor library",
+                "/home/macpoule/Documents/Code/plant-sense/.pio/libdeps/wemosbat/Adafruit Unified Sensor",
+                "/home/macpoule/Documents/Code/plant-sense/.pio/libdeps/wemosbat/ESP32 BLE Arduino/src",
                 "/home/macpoule/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/config",
                 "/home/macpoule/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_trace",
                 "/home/macpoule/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_update",
@@ -109,11 +109,11 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/include",
-                    "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/src",
-                    "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/.pio/libdeps/wemosbat/DHT sensor library",
-                    "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/.pio/libdeps/wemosbat/Adafruit Unified Sensor",
-                    "/home/macpoule/Documents/PlatformIO/Projects/plant-sense/.pio/libdeps/wemosbat/ESP32 BLE Arduino/src",
+                    "/home/macpoule/Documents/Code/plant-sense/include",
+                    "/home/macpoule/Documents/Code/plant-sense/src",
+                    "/home/macpoule/Documents/Code/plant-sense/.pio/libdeps/wemosbat/DHT sensor library",
+                    "/home/macpoule/Documents/Code/plant-sense/.pio/libdeps/wemosbat/Adafruit Unified Sensor",
+                    "/home/macpoule/Documents/Code/plant-sense/.pio/libdeps/wemosbat/ESP32 BLE Arduino/src",
                     "/home/macpoule/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/config",
                     "/home/macpoule/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_trace",
                     "/home/macpoule/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_update",
@@ -209,7 +209,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=50200",
+                "PLATFORMIO=50205",
                 "ARDUINO_Pocket32",
                 "ESP32",
                 "ESP_PLATFORM",
