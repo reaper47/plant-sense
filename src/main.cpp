@@ -8,6 +8,7 @@
 
 #define SERVICE_UUID "4f3af719-2cbc-454e-bfd1-9e260b01b40d"
 #define CHARACTERISTIC_UUID "7107e54a-d118-45b2-aa04-4f2464debf41"
+#define PLANT_NAME "Plant: Emerson"
 
 #define US_ONE_SECOND 1000000
 #define MS_BLUETOOTH_ON 30000
@@ -51,7 +52,7 @@ void loop()
 
 void initBluetooth()
 {
-  BLEDevice::init("Plant: Emerson");
+  BLEDevice::init(PLANT_NAME);
   BLEServer *server = BLEDevice::createServer();
   BLEService *service = server->createService(SERVICE_UUID);
   characteristic = service->createCharacteristic(
