@@ -2,7 +2,7 @@
 
 <div>
 <img src="images/product.jpg" width="250">
-<img src="ui/metadata/en-US/images/phoneScreenshots/lightmode.png" height="333">
+<img src="ui/fastlane/metadata/en-US/images/phoneScreenshots/lightmode.png" height="333">
 </div>
 
 An Arduino project with an Android app to measure the soil moisture of your plants. 
