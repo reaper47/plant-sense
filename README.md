@@ -69,3 +69,7 @@ Send an email to [me](mailto:macpoule@gmail.com) with your desired name, and I w
 
 Add an aural signal, i.e. a beeper, to the device for it to beep when data is ready 
 to be consulted in the app.
+
+## License
+
+[GNU General Public License v3.0](LICENSE)
