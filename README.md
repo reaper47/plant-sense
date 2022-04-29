@@ -1,5 +1,13 @@
 # Plant Sense
 
+
+[![Release](https://img.shields.io/github/v/release/reaper47/plant-sense.svg?logo=github)][releases]
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)][license]
+
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+    alt="Get it on F-Droid"
+    height="75">](https://f-droid.org/packages/com.macpoule.plantsense/)
+
 <div>
 <img src="images/product.jpg" width="250">
 <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/lightmode.png" height="333">
@@ -37,7 +45,7 @@ Why? To know whether the plant is thirsty.
 1. Disconnect the device from the computer.
 1. Slide the switch on the device to **off**, insert the 18650 lithium battery correctly, and slide the switch to **on**. 
 1. Secure the device in soil.
-1. Install the [Android app](https://github.com/reaper47/plant-sense/releases/tag/v1.0.0).
+1. Install the [Android app](https://f-droid.org/packages/com.macpoule.plantsense/).
 
 ## Usage
 
