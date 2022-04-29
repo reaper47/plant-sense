@@ -1,9 +1,5 @@
 # Plant Sense
 
-
-[![Release](https://img.shields.io/github/v/release/reaper47/plant-sense.svg?logo=github)][releases]
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)][license]
-
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
     height="75">](https://f-droid.org/packages/com.macpoule.plantsense/)
