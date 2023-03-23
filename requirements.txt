@@ -1,6 +1,6 @@
 aiofiles==0.6.0
 ajsonrpc==1.1.0
-bottle==0.12.19
+bottle==0.12.20
 certifi==2020.12.5
 chardet==4.0.0
 click==7.1.2
