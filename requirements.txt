@@ -8,7 +8,7 @@ colorama==0.4.4
 h11==0.16.0
 idna==3.7
 ifaddr==0.1.7
-marshmallow==3.11.1
+marshmallow==3.26.2
 platformio==5.1.1
 pyelftools==0.27
 pyserial==3.5
